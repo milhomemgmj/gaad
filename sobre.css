@@ -1,0 +1,103 @@
+#cont {
+		width: 90%;
+		margin-top: 100px;
+}
+
+#menuslaterais {
+	float: left;
+	width: 20%;
+}
+
+.menul {
+	display: block;
+	width: 200px;
+	float: left;
+	padding: 1px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border: 0.5px solid  rgb(12, 12, 12);
+    box-shadow: 2px 2px 15px 1px lightgrey;
+}
+
+#janelaFormatacaoconteudo{
+	width: 70%;
+	height: 980px;	
+	margin:10px;
+	border:none;
+}
+
+#janelaFormatacaomenus{
+	border:none;
+}
+
+h1 {
+	margin: 0px;
+	margin-bottom: 6px;
+	color: rgb(13, 13, 14);
+	color: rgb(15, 15, 15);
+	font-size: 18px;
+	font-family: "Fjalla One", sans-serif;
+}
+
+h2{
+	margin: 0px;
+	margin-bottom: 6px;
+	color: rgb(18, 19, 19);
+	color: rgb(17, 17, 17);
+	font-size: 18px;
+	font-family: "Fjalla One", sans-serif;
+}
+
+h4{
+	margin: 0px;
+	margin-bottom: 6px;
+	color: rgb(8, 8, 8);
+	color: rgb(7, 7, 7);
+	font-size: 18px;
+	font-family: "Fjalla One", sans-serif;
+}
+
+
+a {
+	font-family: "Fjalla One", sans-serif;
+	color: #EFB42E;
+	font-size: 16px;
+	margin: 0 !important;
+	text-shadow: 0.7px 0.8px #FFF;
+	cursor: pointer
+}
+
+#cont p {
+	color: #757575;
+	font-family: 'Heebo', sans-serif;
+}
+
+a:hover{
+	font-family: "Fjalla One", sans-serif;
+	color: rgb(10, 10, 10);
+	margin: 0 !important;
+	cursor: pointer
+}
+
+#opcoes {
+	border: 0.5px solid  rgb(8, 8, 8);
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 2px 2px 15px 1px lightgrey;
+	margin-bottom: 25px;
+	margin-right: 10px;
+	width: 200px;
+
+}
+
+#animal {
+	border: 0.5px solid  rgb(3, 3, 3);
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 2px 2px 15px 1px lightgrey;
+	margin-bottom: 25px;
+	margin-right: 10px;
+	width: 200px;
+}
+
+

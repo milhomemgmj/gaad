@@ -1,0 +1,76 @@
+div.painel-conteudo {
+	position: relative;
+	width: 100%;
+	margin-top: 40px;
+}
+
+div.painel-conteudo h1.titulo-pagina {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 32px;
+	font-weight: bold:
+	box-sizing: border-box;
+	padding: 0 200px;
+	margin: 0 0 40px 0;
+	color:  black;
+	text-align: center;
+}
+
+div.painel-conteudo h1.titulo-pagina span {
+	border-bottom: 2px solid #0c0c0c;
+}
+
+div.painel-conteudo ul.lista-servicos {
+	list-style: none;
+	position: relative;
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+	padding: 0;
+}
+
+div.painel-conteudo ul.lista-servicos li.item-lista-servicos {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	margin: 0 15px;
+	vertical-align: top;
+}
+
+div.painel-conteudo ul.lista-servicos li.item-lista-servicos > a {
+	display: block;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	overflow: hidden;
+	background-color: #0c0c0c;
+	text-decoration: none;
+	text-align: center;
+	transition: opacity 0.1s;
+	box-sizing: border-box;
+	padding-top: 30px;
+	color: #fff;
+}
+
+div.painel-conteudo ul.lista-servicos li.item-lista-servicos > a:hover {
+	opacity: .7;
+}
+
+div.painel-conteudo ul.lista-servicos li.item-lista-servicos > a > img {
+	width: 100px;
+}
+
+div.painel-conteudo ul.lista-servicos li.item-lista-servicos > a > h3 {
+	font-size: 30px;
+	font-family: 'Heebo', sans-serif;
+	text-align: center;
+	text-shadow: none;
+	margin: 10px 0 0 0;
+}
+
+div.painel-conteudo ul.lista-servicos li.item-lista-servicos > p {
+	font: 14px Tahoma, Arial, sans-serif;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 0 2px;
+	color: #555555;
+}

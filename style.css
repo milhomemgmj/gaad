@@ -1,0 +1,378 @@
+/* 
+
+*	KEYFRAME
+*	SLIDER
+*	MANU
+
+*/
+
+/*regra da animação*/
+/*as porcentagens são as fases da animação de acordo com o tempo definido noa tributo animation*/
+@keyframes carrossel {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+
+#container {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#conteudo {
+	margin: 0;
+	padding: 2%;
+	width: 1250px;
+}
+
+/* INICIO -- SLIDER */
+
+#sliderContainer {
+	overflow: hidden;
+	height: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#slider img { width: 10%; float: left; }
+
+#slider { 
+	position: relative;
+	width:500%;
+	margin: 0;
+	left: 100;
+	text-align: left;
+	font-size: 0;
+	animation: 30s carrossel infinite;
+}
+
+#logoSlider {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 1;
+}
+
+#logoSlider > img {
+	margin-top: 100%;
+	width: 100%; 
+}
+
+/* FIM -- SLIDER */
+
+/* INICIO -- CONTEUDO */
+	/* INICIO -- SERVIÇO */
+
+.boxServicos {
+	display: grid;
+	grid-template-areas:  
+	'texto texto texto'
+	'servA servB servC';
+	padding: 15px;
+	margin-bottom: 175px;
+}
+
+.circleServico {
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #0B9395;
+}
+
+.circleServico > a > img {
+	margin-top: 30px;
+	width: 180px;
+}
+
+.circleServico > a {
+	color: #FFF;
+	font-family: 'Heebo', sans-serif;
+	text-decoration: none;
+	text-align: center;
+}
+
+#textServicos {
+	grid-area: texto;
+	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
+	color: #0B9395;
+	font-size: 25px;
+	border-bottom: 2px solid #0B9395;
+	margin-bottom: 80px;
+}
+
+#textServicos > h2 > a:hover {
+	color: #EFB42E;
+	font-size: 39px;
+}
+
+#textServicos > h2 > a {
+	color: #0B9395;
+	text-decoration: none;
+}
+
+#servA, #servB, #servC {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#servA { grid-area: servA; }
+#servB { grid-area: servB; }
+#servC { grid-area: servC; }
+
+.circleServico:hover {
+	background-color: rgba(239, 180, 46, 0.6);
+	transition: 0.5s;
+}
+
+	/* FIM -- SERVIÇO */
+	/* INICIO -- PRODUTOS */
+
+.boxProdutos {
+	display: grid;
+	grid-template-areas: 
+	'textoBox'
+	'produtos';
+	grid-gap: 20px;
+	margin-bottom: 120px;
+	border: 0.5px solid #44A9C1;
+	border-radius: 5px;
+	box-shadow: 2px 2px 15px 1px lightgray;
+	padding: 0;
+}
+
+.produtos {
+	grid-area: produtos;
+	display: grid;
+	grid-template-areas: 
+	'A B C D';
+	grid-gap: 20px;
+	padding: 30px 45px;
+}
+
+.itemA { grid-area: A; }
+.itemB { grid-area: B; }
+.itemC { grid-area: C; }
+.itemD { grid-area: D; }
+
+.textoBox {
+	grid-area: textoBox;
+	background-color: #44A9C1;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.textoBox > h2 { 
+	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
+	color: #FFF;
+	/*border-bottom:2px solid #FFF;*/
+}
+
+.itemA, .itemB, .itemC, .itemD {
+	height: 350px;
+	border: 0.5px solid lightgray;
+	border-radius: 5px;
+	box-shadow: 2px 2px 15px 1px lightgray;
+	grid-template-rows: 45% 20% 10% 25%;
+	display: grid;
+	grid-template-areas:  
+	'subA'
+	'subB'
+	'subC'
+	'subD';
+	grid-gap: 5px;
+	padding: 15px;
+}
+
+.subItem {
+	padding: 0;
+	margin: 0;
+}
+
+.subItem > img {
+	width: 150px;
+	height: 150px;
+}
+
+.subItemA { 
+	grid-area: subA;
+	display: flex;
+	justify-content: center;
+}
+
+.subItemB { grid-area: subB; }
+.subItemC { grid-area: subC; }
+
+.subItemD {
+	grid-area: subD;
+	margin: 0;
+	display:  flex;
+	align-items: center;
+	justify-content:  center;
+}
+
+.subItemB > h3 {
+	font-family: 'Heebo', sans-serif;
+	text-align: center;
+	color: #094074;
+}
+
+.subItemC > h2 {
+	font-family: 'Heebo', sans-serif;
+	text-align: center;
+	font-weight: 800;
+	color: #094074;
+}
+
+	/* FIM -- PRODUTO */
+/* FIM -- CONTEUDO */
+
+/* INICIO -- BOTÕES */
+
+.button, .buttonW {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.button, .buttonW > a {
+	text-decoration: none;
+	text-align: center;
+}
+
+.buttonW {
+	width: 100%;
+}
+
+.btnY {
+	color: #EFB42E;
+	border:1px solid #EFB42E;
+}
+
+.btnY > a {
+	color: #EFB42E;
+}
+
+.btnY:hover {
+	color: rgba(239, 180, 46, 0.8);
+	border:1px solid rgba(239, 180, 46, 0.8);
+	transition: 0.5s;
+}
+
+.btnYP:hover {
+	background-color: rgb(249, 200, 46);
+	transition: 0.5s;
+}
+
+.btnYP, .btnYP > a {
+	color: #FFF;
+	background-color: #EFB42E;
+}
+
+/* FIM -- BOTÕES */
+
+
+/* INICIO GALERIA */
+
+#containerGaleria {
+  padding: 0 30%;
+  margin-bottom: 35px;
+}
+
+#galeria {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-areas: 
+    'A A A A A B B B B B'
+    'A A A A A B B B B B'
+    'D D D C C C E E E E'
+    'D D D C C C E E E E'
+    'D D D F F F I I I I'
+    'J J J F F F I I I I'
+    'J J J H H H G G G G'
+    'J J J H H H G G G G';
+  grid-gap: 10px;
+}
+
+#imgA, #imgB, #imgC, #imgD, #imgE, #imgF, #imgG, #imgH, #imgI, #imgJ {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+#imgA {
+  grid-area: A;
+  background-image: url('../images/galeria/1.jpg');
+}
+
+#imgB {
+  grid-area: B;
+  background-image: url('../images/galeria/2.jpg');
+}
+
+#imgC {
+  grid-area: C;
+  background-image: url('../images/galeria/3.jpg');
+}
+
+#imgD {
+  grid-area: D;
+  background-image: url('../images/galeria/8.jpg');
+}
+
+#imgE {
+  grid-area: E;
+  background-image: url('../images/galeria/5.jpg');
+}
+
+#imgF {
+  grid-area: F;
+  background-image: url('../images/galeria/6.jpg');
+}
+
+#imgG {
+  grid-area: G;
+  background-image: url('../images/galeria/7.jpg');
+}
+
+#imgH {
+  grid-area: H;
+  background-image: url('../images/galeria/4.jpg');
+}
+
+#imgI {
+  grid-area: I;
+  background-image: url('../images/galeria/9.jpg');
+}
+
+#imgJ {
+  grid-area: J;
+  background-image: url('../images/galeria/10.jpg');
+}
+
+/* FIM GALERIA */

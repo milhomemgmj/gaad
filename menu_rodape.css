@@ -1,0 +1,263 @@
+body {margin: 0;padding: 0;}
+
+#barraMenu {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: fixed;
+	justify-content: center;
+	background-color: rgb(8, 8, 8);
+	z-index: 2;
+	padding: 4px 15px;
+	box-shadow: 1px 1px 15px 1px gray;
+}
+
+#btnMenu {
+	margin-right: 15px;
+	width: auto;
+	display: none;
+	float: right !important;
+}
+
+.dropdown-menu {
+	display: none;
+}
+
+#btnMenu > img {
+	margin-top: 10px;
+	width: 40px;
+}
+
+#logo { 
+	float: left;
+}
+
+#logo > img {
+	width: 100px;
+}
+
+#menuOptions {
+	list-style: none;
+	float: right;
+}
+
+#menuOptions > li {
+	float: left;
+}
+
+#menuOptions > li > a {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 20px;
+	padding: 2px 20px;
+	text-decoration: none;
+	color: rgb(246, 249, 250);
+}
+
+#menuOptions > li > a:hover {
+	font-size: 21px;
+	color: #EFB42E;
+	border-bottom:3px solid #EFB42E;
+	transition: 0.5s;
+}
+#barraMenu ul ul {
+	list-style: none;
+	position: absolute;
+	visibility: hidden;
+}
+
+#barraMenu ul li:hover  #menuDropdown {
+	visibility: visible;
+	transition-delay: 0.3s;
+}
+
+#menuDropdown {
+	padding-top: 5px;
+}
+
+#menuDropdown > li  {
+	margin-left: -40px;
+	padding: 5px 15px 5px 15px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 5px 5px 1px gray;
+}
+
+
+#menuDropdown li a {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 20px;
+	color: #44A9C1;
+	text-decoration: none;
+}
+
+#menuDropdown > li > a:hover {
+	font-size: 21px;
+	color: rgb(243, 243, 242);
+	border-bottom:3px solid rgb(250, 249, 248);
+	transition: 0.5s;
+}
+
+/* INICO -- RODAPÉ */
+
+#rodape {
+	position: absolute;
+	width: 100% !important;
+	height: 275px;
+	background-color: rgb(15, 15, 15);
+	display: grid;
+	/* grid-template-columns: 15% 37% 38% 10%; */
+	grid-template-areas:  
+	'logo info contato vaco'
+	'logo info contato vaco'
+	'logo aviso aviso  vaco';
+	grid-template-rows: auto auto auto;
+	grid-gap: 5px;
+	color: #FFF;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	clear: both;
+	box-shadow: -1px -2px 15px -1px gray;
+}
+
+.logo {
+	grid-area: logo;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.info {
+	grid-area: info;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contato {
+	grid-area: contato;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.aviso {
+	grid-area: aviso;
+	text-align: center;
+}
+
+.vaco {	grid-area: vaco; }
+
+.logo, .contato, .info {
+	padding: 15px;
+}
+
+.aviso, .contato, .info {
+	font-family: 'Heebo', sans-serif;
+}
+
+.logo > img {
+	width: 120px;
+}
+
+.logo > p {
+	font-family: 'Heebo', sans-serif;
+	font-size: 15px;
+	margin: 0;
+}
+
+.info > h3, .contato > h3 {
+	font-family: 'Heebo', sans-serif;
+	color: #EFB42E;
+	border-bottom:3px solid #EFB42E;
+	text-shadow: none;
+	width: 90%;
+	text-align: center;
+}
+
+.info > ul {
+	list-style: none;
+	padding: 0;
+}
+
+.info > ul > li > a {
+	text-decoration: none;
+	font-family: 'Heebo', sans-serif;
+	color: #FFF;
+}
+
+.info > ul > li > a:hover {
+	color: #FFF;
+	color: #EFB42E;
+	border-bottom:1px solid #EFB42E;
+}
+
+.contato > ul {
+	list-style: none;
+	padding: 0;
+}
+
+.contato > ul > li {
+	text-decoration: none;
+	font-family: 'Heebo', sans-serif;
+	color: #FFF;
+}
+
+/* FIM -- RODAPÉ */
+
+/* INICIO CONTAINERS DE CONTEÚDO */
+
+#container {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#conteudo {
+	margin: 0;
+	margin-top: 70px;
+	padding: 2%;
+	width: 1250px;
+	padding-top: 2.5rem !important;
+
+}
+
+#menuLateral {
+	display: block;
+	width: 200px;
+	float: left;
+	padding: 1px;
+	margin-right: 10px;
+	border: 0.5px solid  #44A9C1;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 1px lightgrey;
+    position: fixed;
+}
+
+#conteudoCuidados {
+	display: block;
+	width: 980px;
+	height: 1000px;
+	float: right;
+	padding: 10px;
+	text-align: justify;
+	border: 0.5px solid  #44A9C1;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 1px lightgrey;
+}
+iframe#janelaFormatacao{
+	width: 960px;
+	height: 980px;	
+	margin:10px;
+	border:none;
+}
+
+
+
+/* FIM CONTAINERS DE CONTEÚDO */
