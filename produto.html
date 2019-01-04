@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>GAAD</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/menu_rodape.css">
+	<link rel="stylesheet" type="text/css" href="css/responsivo/menu_rodape.css">
+	<link rel="stylesheet" type="text/css" href="css/produto.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Fjalla+One" rel="stylesheet">
+   
+</head>
+<body>
+        <!-- MENU NORMAL -->
+            <nav id="barraMenu"> 
+                <div id="logo">
+                    <img src="images/logo1.png">
+                </div>
+                <ul id="menuOptions">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="servicos.html">PRODUTOS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="#">CARRINHO</a></li>
+                </ul>		
+            </nav>
+        <!-- MENU MOBILE -->
+            <div class="dropdown-menu"> 
+                <a id="logoMenuR" href="#"><img src="images/logoMenu.png"></a>
+                <button class="dropbtn"><img src="images/menu.png"></button>
+                <div class="dropdown-content">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="servicos.html">PRODUTOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="#">CARRINHO</a></li>
+                    </ul>		
+                </div>
+            </div>               	          
+
+            <div id="container">
+                    <div id="conteudo">
+                        <div id="produtoContent">
+                            <div id="thais">
+                                <div id="imgProduto">
+                                        <img src="images/terno5.jpg" width="100%" height="100%">
+                                </div>
+                            </div>
+                            <div id="thaisEsquerda">
+                                <form method="post" action="carrinho.html">
+                                    <h2 id="nomeProduto">Terno</h2>
+                                    <h2 id="preco">R$ 250,00</h2>
+                                    <div id="opcoes">
+                                        <div>
+                                            Tamanho:
+                                            <select>
+                                                <option selected>Selecione</option>
+                                                <option>22</option>
+                                                <option>26</option>
+                                                <option>28</option>
+                                                <option>30</option>
+                                                
+                                            </select>
+                                        </div>
+                                        -
+                                        <div>
+                                            Quantidade: 
+                                            <input type="number" max="5" min="1" value="1" name="quantidade">
+                                        </div>						
+                                    </div>
+                                    <div><a href="carrinho.html" class="buttonW btnYP" >Comprar Produto</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+            

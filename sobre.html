@@ -1,0 +1,223 @@
+<! doctype html>
+<html>
+	<head>
+            <title>GAAD</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="css/menu_rodape.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" type="text/css" href="css/sobre.css">
+            <link rel="stylesheet" type="text/css" href="css/responsivo/home.css">
+            <link rel="stylesheet" type="text/css" href="css/responsivo/menu_rodape.css">
+            <link href="https://fonts.googleapis.com/css?family=Heebo|Fjalla+One" rel="stylesheet">
+              
+    </head>  
+    <body>
+    <!-- MENU NORMAL -->
+        <nav id="barraMenu"> 
+            <div id="logo">
+                <img src="images/logo1.png">
+            </div>
+            <ul id="menuOptions">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="servicos.html">PRODUTOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="#">CARRINHO</a></li>
+            </ul>		
+        </nav>
+    <!-- MENU MOBILE -->
+        <div class="dropdown-menu"> 
+            <a id="logoMenuR" href="#"><img src="images/logoMenu.png"></a>
+            <button class="dropbtn"><img src="images/menu.png"></button>
+            <div class="dropdown-content">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="servicos.html">PRODUTOS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="Sobre.html">SOBRE</a></li>
+                    <li><a href="#">CARRINHO</a></li>
+                </ul>		
+            </div>
+        </div>        
+        <div id="container">
+                <div id="conteudo">
+                    <center>
+                        <div id="cont">
+                            <div style="float: left; width:250px">
+                                
+                                <div id="opcoes">
+                                    <div id="opcaoMissao" style="display: block">
+                                        <h4> GAAD </h4>
+                                        <a onclick="escreverTexto(1)" >MISSÃO </a> <br>
+                                        <a onclick="escreverTexto(2)" >VISÃO </a> <br>
+                                        <a onclick="escreverTexto(3)" >VALORES </a> <br>
+                                        <a onclick="escreverTexto(4)" >HISTÓRIA LOGO </a> <br>
+                                    </div>  
+                                    
+                                        <div style="float: left; width: 650px; margin-left: 50px">
+                                                <div id="cuidadosCao" style="display: block;">
+                                                    <h1>História GAAD</h1>
+                                                    <h2></h2>
+                                                    
+                                                    <p>
+                                                </div>
+                                                
+                                                <div style="display: none" id="generica"></div>
+                                            </div>
+                                        </div>
+                                    </center>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+                 <br><br><br><br>
+                <!-- inicio da pagina rodape -->
+        <div id="rodape">
+                <div class="logo" id="logo">
+                    <img src="images/logo1.png">
+                </div>
+                <div class="info">
+                    <h3>INFORMAÇÕES</h3>
+                    <ul>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Enviar mensagem a loja</a></li>
+                        <li><a href="#">Imagens Utilizadas</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <h3>CONTATO DIRETO</h3>
+                    <ul>
+                        
+                        <li>Telefone: (11) 2538-3208</li>
+                        <li>Praça Novo Mundo 249, Sala 4 - São Paulo-SP</li>
+                    </ul>
+                    <p> <a href="#" target="_blank">
+                        <img src="images/facebook.png" width="80" height="80"> </a> &nbsp;
+                  <a href="https://www.instagram.com/gaadstore/?hl=pt-br" target="_blank">
+                      <img src="images/instagram.png" width="80" height="80"> </a>
+              </p>
+                </div>
+                <div class="aviso">
+                    <p>GMJ &copy; - Todos os Direitos Reservados, 2019 - 2019</p>
+                    
+                </div>
+                <div class="vaco"></div>
+            </div>
+            </div>
+            <!-- fim da pagina rodape -->
+  
+  </body> 
+</html>
+                                
+<script type="text/javascript">
+	function exibirOpcoes(tipo) {
+		//chamando a função para ocultar as opções
+		ocultarOpcoes();
+
+		//chamando a função para ocultar todos os textos
+		ocultarTextos();
+
+		if(tipo == 1) {
+			//mostrando a opção na tela
+			document.getElementById("opcaoMissao").style.display = 'block';
+			//mostrando o texto padrão daquela opção na tela
+			escreverTexto(1)
+			return;
+		}
+
+		if(tipo == 2) {
+			//mostrando a opção na tela
+			document.getElementById("opcaoVisao").style.display = 'block';
+			//mostrando o texto padrão daquela opção na tela
+			escreverTexto(5)
+			return;
+		}
+
+		if(tipo == 3) {
+			//mostrando a opção na tela
+			document.getElementById("opcaoValores").style.display = 'block';
+			//chamando a funcao para escrver o texto valores
+			escreverTexto(9)
+			return;
+		}
+
+		if(tipo == 4) {
+			//mostrando a opção na tela
+			document.getElementById("opLogo").style.display = 'block';
+			//chamando a funcao para escrver o texto história da logo
+			escreverTexto(13)
+			return;
+		}
+	}
+
+	function exibirTexto(divTexto) {
+		//chamando a função para ocultar todos os textos
+		ocultarTextos();
+		document.getElementById(divTexto).style.display = 'block';		
+	}
+
+	function escreverTexto(tipo) {
+		//ocultar textos
+		ocultarTextos();
+		// variavel html
+		let html = "";
+
+
+		if(tipo == 1) {
+			//CRIAR HTML DO TEXTO DE ALIMENTAÇÃO
+			html = "<h1>Missão da Gaad</h1>"
+			html += "<h2></h2>"
+			html +="<p></p>"
+			html +="<p></p>"
+			html +="<h2></h2>"
+			html +="<p></p>"
+			html +=	"<p></p>"
+
+
+
+
+
+		}
+
+		if(tipo == 2) {
+			//CRIAR HTML DO TEXTO DE ALIMENTAÇÃO
+			html = "<h1>Visão Gaad</h1>"
+			html += ""
+		}
+
+		if(tipo == 3) {
+			//CRIAR HTML DO TEXTO DE CUIDADOS COM PASSÁROS
+			html = "<h1>Valores Gaad</h1>"
+					}
+
+		if(tipo == 4) {
+			//CRIAR HTML DO TEXTO DE HIGIENE
+			html = "<h1>História logo Gaad</h1>"
+				
+		}
+
+	
+		//mostrando a div generica de texto
+		document.getElementById("generica").style.display = 'block';
+
+		//inserindo o html com o texto na div generica
+		document.getElementById("generica").innerHTML = html;
+	}
+
+
+
+	
+
+	function ocultarTextos() {
+
+		//ocultando as divs de texto
+		document.getElementById("cuidadosCao").style.display = 'none';
+		
+		document.getElementById("generica").style.display = 'none';
+	}
+</script>
+
+                                  
